@@ -39,6 +39,25 @@ body {
     color: #a6a6a6;
 }
 
+/* Custom logo styles */
+a {
+    text-decoration: none;
+}
+
+.custom-logo {
+    width: 120px;
+    height: auto;
+    margin-top: 20px;
+    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
+    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+}
+
+.custom-logo:hover {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 15px rgba(79, 163, 247, 0.8)); /* Slight color change */
+    opacity: 0.8; /* Slight fade effect */
+}
+
 footer {
     position: absolute;
     bottom: 20px;
