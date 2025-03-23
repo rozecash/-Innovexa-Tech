@@ -39,13 +39,13 @@ body {
     color: #a6a6a6;
 }
 
-/* Custom logo styles */
+/* GitHub logo styles */
 a {
     text-decoration: none;
 }
 
 .custom-logo {
-    width: 120px;
+    width: 120px; /* Adjust the size as needed */
     height: auto;
     margin-top: 20px;
     filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
