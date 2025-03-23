@@ -39,23 +39,23 @@ body {
     color: #a6a6a6;
 }
 
-/* GitHub logo styles */
 a {
     text-decoration: none;
 }
 
+/* Smaller GitHub logo, no glow on hover */
 .custom-logo {
-    width: 120px; /* Adjust the size as needed */
+    width: 60px; /* Smaller size */
     height: auto;
     margin-top: 20px;
-    filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.3));
-    transition: transform 0.3s ease, filter 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+    filter: none;
 }
 
 .custom-logo:hover {
-    transform: scale(1.1);
-    filter: drop-shadow(0 0 15px rgba(79, 163, 247, 0.8)); /* Slight color change */
-    opacity: 0.8; /* Slight fade effect */
+    transform: scale(1.05);
+    opacity: 0.85;
+    filter: none; /* Removes glow */
 }
 
 footer {
