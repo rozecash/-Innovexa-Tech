@@ -10,19 +10,20 @@ body {
     align-items: center;
     height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 
 .container {
     text-align: center;
     animation: fadeIn 2s ease-in-out;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .brand-name {
     font-size: 3rem;
     font-weight: bold;
-    color: #4fa3f7; /* Blue glow effect */
+    color: #4fa3f7;
     text-shadow: 0 0 10px #4fa3f7, 0 0 20px #4fa3f7, 0 0 30px #4fa3f7;
 }
 
@@ -43,7 +44,7 @@ footer {
     bottom: 20px;
     font-size: 0.8rem;
     color: #666666;
-    z-index: 1;
+    z-index: 2;
 }
 
 @keyframes fadeIn {
@@ -55,7 +56,7 @@ footer {
     }
 }
 
-/* Glowing background effect */
+/* Blue outer background glow */
 body::before {
     content: '';
     position: absolute;
@@ -63,7 +64,22 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background: radial-gradient(circle, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 1));
-    box-shadow: 0 0 50px rgba(79, 163, 247, 0.7), 0 0 100px rgba(79, 163, 247, 0.5), 0 0 150px rgba(79, 163, 247, 0.3);
+    background: radial-gradient(circle, rgba(0, 0, 0, 0.85), rgba(0, 0, 0, 1));
+    box-shadow: 0 0 60px rgba(79, 163, 247, 0.6), 0 0 120px rgba(79, 163, 247, 0.4), 0 0 180px rgba(79, 163, 247, 0.2);
     z-index: 0;
+}
+
+/* White soft glow in center */
+body::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 70%);
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    pointer-events: none;
+    filter: blur(60px);
 }
