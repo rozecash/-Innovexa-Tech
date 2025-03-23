@@ -1,0 +1,68 @@
+/* style.css */
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background: radial-gradient(circle, #1a1a1a, #0d0d0d);
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.brand-name {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #ff914d;
+}
+
+.tagline {
+    font-size: 1.5rem;
+    margin: 10px 0;
+    color: #cccccc;
+}
+
+.description {
+    font-size: 1rem;
+    margin: 10px 0;
+    color: #a6a6a6;
+}
+
+.icons {
+    margin: 20px 0;
+}
+
+.icon {
+    margin: 0 10px;
+    font-size: 1.5rem;
+    color: #ff914d;
+    text-decoration: none;
+    transition: transform 0.2s, color 0.2s;
+}
+
+.icon:hover {
+    transform: scale(1.2);
+    color: #ffb47d;
+}
+
+footer {
+    position: absolute;
+    bottom: 20px;
+    font-size: 0.8rem;
+    color: #666666;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
